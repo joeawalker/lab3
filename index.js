@@ -8,6 +8,6 @@ const PORT = process.env.PORT || 3000;
 http.createServer(function (request, reponse){
     reponse.writeHead(200, {'Content-Type': 'text/plain'});
     reponse.end('Hello World\n');
-}).listen($PORT);
+}).listen(PORT);
 
-console.log('Server running at http://127.0.0.1:$PORT/');
+console.log('Server running at http://127.0.0.1:PORT/');
