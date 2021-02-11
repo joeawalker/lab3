@@ -2,14 +2,14 @@
   "name": "cm4025_nodeonheroku",
   "version": "1.0.0",
   "description": "node on heroku",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \\\"Error: no test specified\\\" && exit 1",
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "author": "Joe",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.17.1"
   }
 }
