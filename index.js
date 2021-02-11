@@ -11,8 +11,8 @@ const PORT = process.env.PORT || 3000;
 
 http.createServer(function (request, reponse){
     reponse.writeHead(200, {'Content-Type': 'text/html', 'Access-Control-Allow-Origin' : '*'});
-    var readSteam = fs.createReadStream(__dirname + '/index.html');
-    ReadStream.pipe(response);
+    var readStream = fs.createReadStream(__dirname + '/index.html');
+    readStream.pipe(response);
     //reponse.end('Hello World\n');
 }).listen(PORT);
 
